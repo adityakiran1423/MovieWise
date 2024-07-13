@@ -1,9 +1,9 @@
 import './App.css';
-import UserInput from './Components/UserInput';
+import InputForm from './Components/InputForm';
 
 function App() {
   return (
-    <UserInput></UserInput>
+    <InputForm/>
   );
 }
 
