@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Movie Wise</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MovieWise</title>
     <style>
-        body {
-          background-image: url('theater1.jpg');
-        }
-        </style>
+      body {
+        background-image: url('theater1.jpg');
+        margin: 0; /* Removes default margin */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .moviename_form {
+        width: 300px; /* Adjusted width */
+        padding: 20px; /* Adds padding inside the box */
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow around the box */
+        border: 2px solid #ccc; /* Adds a border around the form */
+        background-color: #f9f9f9; /* Adds a background color */
+      }
+    </style>
   </head>
   <body>
-      <p>This is index.html, the one within the react app</p>
       <div class="moviename_form">
         <form>
           <label for="fname">Enter your movie name:</label><br>
           <input type="text" id="fname" name="fname"><br>
           <button type = "submit">Get Recs!</button>
-        </form> 
+        </form>
+
       </div>
   </body>
 </html>
