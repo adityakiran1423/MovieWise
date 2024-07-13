@@ -2,7 +2,7 @@ import React from 'react';
 
 function UserInput() {
     return(
-        <p>Values returning from indexpage function</p>
+        <p>Values returning from UserInput function</p>
     );
 }
 
