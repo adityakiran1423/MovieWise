@@ -1,3 +1,5 @@
+// form for inputting user movie name
+
 import React from 'react';
 
 function InputForm() {

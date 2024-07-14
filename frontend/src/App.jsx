@@ -1,17 +1,19 @@
-// code is there in phone pictures
-
 import './App.css'; 
 
-import React from 'react';
-import Home from './components/Home';
+import React, {useState, useEffect} from 'react';
+import Home from './Components/Homepage';
+import Navbar from './Components/Navbar';
+
+import backgroundImage from './img/theater1.jpg';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState(''); // State for search term
   const [movies, setMovies] = useState([]); // State for recommended movies
 
-  // Simulate fetching recommendations on search term change (replace with API call)
+  
   useEffect(() => {
     if (searchTerm) {
+      // Simulate fetching recommendations on search term change (replace with API call)
       const fetchRecommendations = async () => {
         const response = await fetch(`https://api.example.com/movies?q=${searchTerm}`); // Replace with your API endpoint
         const data = await response.json();
@@ -29,12 +31,14 @@ function App() {
 
   return (
     <div className="App">
+      <div className="background-container" style={{backgroundImage: `url(${backgroundImage})`}}>
       <Navbar />
       <Home
         searchTerm={searchTerm}
         onSearchChange={handleSearchChange}
         movies={movies}
       />
+      </div>
     </div>
   );
 }

@@ -1,5 +1,3 @@
-/* src/components/Home.css */
-
 .home-container {
   padding-top: 60px;
   display: flex;
@@ -37,7 +35,7 @@ input {
 }
 
 button {
-  background-color: #850611;
+  background-color: #861d22;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
