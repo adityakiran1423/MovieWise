@@ -1,0 +1,67 @@
+.about-us {
+    background-image: url("../img/theater1.jpg"); /* Assuming your image path */
+    background-size: cover; /* Stretch image to fill container */
+    background-position: center; /* Center image horizontally and vertically */
+    min-height: 100vh; /* Set minimum height to cover viewport */
+    display: flex; /* Make content flex vertically */
+    flex-direction: column; /* Stack content on top of each other */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text within the component */
+    color: #fff; /* Set text color to white */
+  }
+  
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Space out nav links horizontally */
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .nav-links a:hover {
+    color: #850611;
+  }
+  
+  .content {
+    padding-top: 80px; /* Adjust padding to match image content */
+    margin: 0 auto;
+    max-width: 800px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add subtle text shadow */
+  }
+  
+  p {
+    font-size: 1.5em;
+    line-height: 1.5; /* Increase line height for better readability */
+    margin-bottom: 20px;
+  }
+  

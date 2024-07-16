@@ -1,32 +1,29 @@
-/* src/components/Navbar.css */ 
-
 .navbar {
-    background-color: #000000;
-    padding: 1rem 2rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-  }
-  
-  .nav-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin-right: 1.5rem;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  
-  .nav-links a:hover {
-    color: #810419;
-  }
+  background-color: #222222; /* Dark gray background */
+  color: #fff; /* White text color */
+  display: flex; /* Arrange elements horizontally */
+  justify-content: space-between; /* Space out navigation links */
+  padding: 1rem 2rem; /* Add padding for spacing */
+}
+
+.nav-list {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Arrange list items horizontally */
+}
+
+.nav-item {
+  margin-right: 1.5rem; /* Add space between navigation items */
+}
+
+.nav-link {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color from navbar */
+  font-weight: bold; /* Make link text bold */
+  transition: color 0.3s ease-in-out; /* Smooth color change on hover */
+}
+
+.nav-link:hover {
+  color: #850611; /* Change link color on hover (blue) */
+}
